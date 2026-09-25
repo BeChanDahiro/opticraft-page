@@ -3,47 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thư Viện Phần Mềm — OptiJuegos</title>
+    <title>OptiProjects — Thư Viện Phần Mềm</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>📦 Thư Viện Phần Mềm OptiJuegos</h1>
+            <h1>✨ OptiProjects</h1>
             <p class="subtitle">Tối ưu cho máy cấu hình thấp — Nguồn chính thức</p>
-            <p class="official">✅ Trang chủ: <a href="https://optijuegos.net/" target="_blank">optijuegos.net</a></p>
+            <p class="official">✅ Tác giả: <a href="https://optijuegos.net/" target="_blank">OptiJuegos</a></p>
         </header>
 
-        <div class="software-list">
-            <!-- Phần mềm 1: OptiCraft -->
-            <div class="card">
-                <div class="card-icon">🎮</div>
-                <div class="card-info">
-                    <h3>OptiCraft 1.12.0</h3>
-                    <p class="desc">Phiên bản Minecraft tối ưu, chạy mượt trên máy yếu</p>
-                    <p class="meta">📦 41.99 MB | 📅 26/05/2026 | .7z</p>
-                </div>
-                <a href="opticraft.html" class="view-btn">Xem Chi Tiết →</a>
-            </div>
+        <div class="category-tabs">
+            <button class="tab-btn active" data-category="all">Tất Cả</button>
+            <button class="tab-btn" data-category="browser">Trình Duyệt</button>
+            <button class="tab-btn" data-category="system">Hệ Thống</button>
+            <button class="tab-btn" data-category="game">Game</button>
+            <button class="tab-btn" data-category="other">Khác</button>
+        </div>
 
-            <!-- Thêm phần mềm khác ở đây -->
-            <div class="card">
-                <div class="card-icon">🌐</div>
+        <div class="software-list" id="softwareList">
+
+            <!-- === TRÌNH DUYỆT === -->
+            <div class="card" data-category="browser">
+                <div class="card-icon">🦊</div>
                 <div class="card-info">
-                    <h3>Brave / Chrome / Firefox (Phiên bản cũ tối ưu)</h3>
-                    <p class="desc">Trình duyệt hỗ trợ Windows XP / 7 / 8.1</p>
-                    <p class="meta">Từ trang chủ OptiJuegos</p>
+                    <h3>Firefox 78 — Win 2000/XP</h3>
+                    <p class="desc">Phiên bản hỗ trợ Windows 2000 / XP</p>
+                    <span class="tag">BACKPORT</span>
                 </div>
                 <a href="https://optijuegos.net/" target="_blank" class="view-btn">Xem Nguồn →</a>
             </div>
+
+            <div class="card" data-category="browser">
+                <div class="card-icon">🦊</div>
+                <div class="card-info">
+                    <h3>Firefox 150 — Win 7/8.1</h3>
+                    <p class="desc">Hỗ trợ Windows 7 / 8.1</p>
+                    <span class="tag">BACKPORT</span>
+                </div>
+                <a href="https://optijuegos.net/" target="_blank" class="view-btn">Xem Nguồn →</a>
+            </div>
+
+            <div class="card" data-category="browser">
+                <div class="card-icon">🧭</div>
+                <div class="card-info">
+                    <h3>Brave 149 — Win 7/8.1</h3>
+                    <p class="desc">Trình duyệt nhanh, bảo mật cho Win 7/8.1</p>
+                    <span class="tag">BACKPORT</span>
+                </div>
+                <a href="https://optijuegos.net/" target="_blank" class="view-btn">Xem Nguồn →</a>
+            </div>
+
+            <div class="card" data-category="browser">
+                <div class="card-icon">🌐</div>
+                <div class="card-info">
+                    <h3>Chrome 144 — Win XP/7</h3>
+                    <p class="desc">Chrome tối ưu cho Windows XP / 7</p>
+                    <span class="tag">BACKPORT</span>
+                </div>
+                <a href="https://optijuegos.net/" target="_blank" class="view-btn">Xem Nguồn →</a>
+            </div>
+
+            <!-- === HỆ THỐNG === -->
+            <div class="card" data-category="system">
+                <div class="card-icon">☕</div>
+                <div class="card-info">
+                    <h3>Java 8u151 — Win XP/Vista</h3>
+                    <p class="desc">Chạy ứng dụng Java trên Windows XP/Vista</p>
+                    <span class="tag">PORT</span>
+                </div>
+                <a href="https://optijuegos.net/" target="_blank" class="view-btn">Xem Nguồn →</a>
+            </div>
+
+            <div class="card" data-category="system">
+                <div class="card-icon">🛠️</div>
+                <div class="card-info">
+                    <h3>One Core API — Win XP</h3>
+                    <p class="desc">Chạy chương trình mới trên Windows XP</p>
+                    <span class="tag">PROGRAMAS NUEVOS</span>
+                </div>
+                <a href="https://optijuegos.net/" target="_blank" class="view-btn">Xem Nguồn →</a>
+            </div>
+
+            <div class="card" data-category="system">
+                <div class="card-icon">📦</div>
+                <div class="card-info">
+                    <h3>UpdatePack — Windows 7</h3>
+                    <p class="desc">Bộ cập nhật hoàn chỉnh cho Windows 7</p>
+                    <span class="tag">ACTUALIZACIÓN</span>
+                </div>
+                <a href="https://optijuegos.net/" target="_blank" class="view-btn">Xem Nguồn →</a>
+            </div>
+
+            <div class="card" data-category="system">
+                <div class="card-icon">🖥️</div>
+                <div class="card-info">
+                    <h3>Drivers Tối ưu — Intel GPU</h3>
+                    <p class="desc">Tăng hiệu năng đồ họa trên máy cấu hình thấp</p>
+                    <span class="tag">iGPU</span>
+                </div>
+                <a href="https://optijuegos.net/" target="_blank" class="view-btn">Xem Nguồn →</a>
+            </div>
+
+            <!-- === GAME === -->
+            <div class="card" data-category="game">
+                <div class="card-icon">🎮</div>
+                <div class="card-info">
+                    <h3>OptiCraft 1.12.0</h3>
+                    <p class="desc">Minecraft tối ưu — chạy mượt trên máy yếu</p>
+                    <span class="tag official-tag">TRANG CHÍNH</span>
+                </div>
+                <a href="opticraft.html" class="download-btn-small">Tải Ngay →</a>
+            </div>
+
+            <!-- === KHÁC === -->
+            <div class="card" data-category="other">
+                <div class="card-icon">⚙️</div>
+                <div class="card-info">
+                    <h3>VS Code — Win 7/8.1</h3>
+                    <p class="desc">Trình soạn thảo mã cho Windows 7/8.1</p>
+                    <span class="tag">BACKPORT</span>
+                </div>
+                <a href="https://optijuegos.net/" target="_blank" class="view-btn">Xem Nguồn →</a>
+            </div>
+
+            <div class="card" data-category="other">
+                <div class="card-icon">🔧</div>
+                <div class="card-info">
+                    <h3>Cài Đặt Gói Phụ Thuộc</h3>
+                    <p class="desc">Sửa lỗi thiếu file DLL, cài đặt nhanh</p>
+                    <span class="tag">FIX ERRORES</span>
+                </div>
+                <a href="https://optijuegos.net/" target="_blank" class="view-btn">Xem Nguồn →</a>
+            </div>
+
         </div>
 
         <div class="note">
-            <h3>ℹ️ Thông tin</h3>
+            <h3>ℹ️ Thông tin chung</h3>
             <ul>
-                <li>Tất cả phần mềm do <strong>OptiJuegos</strong> phát triển & cung cấp</li>
-                <li>File lưu trên MediaFire — giải nén bằng 7-Zip</li>
-                <li>📌 Xem đầy đủ dự án: <a href="https://optijuegos.net/" target="_blank">optijuegos.net</a></li>
+                <li>Tất cả dự án do <strong>OptiJuegos</strong> phát triển — <a href="https://optijuegos.net/" target="_blank">optijuegos.net</a></li>
+                <li>OptiCraft: lưu trên MediaFire, giải nén bằng 7-Zip</li>
+                <li>Các phần mềm khác: truy cập trang chủ để tải phiên bản phù hợp</li>
+                <li>Server Bedrock: xem chi tiết tại trang chủ</li>
             </ul>
         </div>
 
@@ -51,5 +154,27 @@
             <p>© 2026 Phân phối theo nguồn chính thức từ OptiJuegos</p>
         </footer>
     </div>
+
+    <script>
+        // Lọc danh sách theo danh mục
+        const tabs = document.querySelectorAll('.tab-btn');
+        const cards = document.querySelectorAll('.card');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+
+                const cat = tab.dataset.category;
+                cards.forEach(card => {
+                    if (cat === 'all' || card.dataset.category === cat) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
